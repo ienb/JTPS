@@ -1,24 +1,63 @@
 .header {
-  height: 47.5px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  .tools {
-    display: flex;
-    .button {
-      width: 92.5px;
-      height: 21px;
+  height: 115px;
 
-      img {
-        width: 100%;
-        height: 100%;
+  .top {
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 113px;
+
+    .tools {
+      display: flex;
+      margin-right: 14.5px;
+      .button {
+        width: 92.5px;
+        height: 21px;
+        cursor: pointer;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
       }
     }
   }
 
+  .bottom {
+    height: 67px;
+
+    .row {
+      font-weight: 400;
+      font-size: 15px;
+      display: flex;
+      align-items: center;
+    }
+
+    .col {
+      height: 25px;
+      line-height: 25px;
+      cursor: pointer;
+    }
+
+    .first {
+      height: 28px;
+      padding-left: 113px;
+      flex-direction: row;
+      gap: 25px;
+    }
+
+    .second {
+      height: 39px;
+      gap: 25px;
+      padding: 0 15px;
+    }
+  }
+
   .logo {
-    position: relative;
+    position: absolute;
     height: 75px;
     top: 10px;
+    left: 15px;
   }
 }

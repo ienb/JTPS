@@ -1,0 +1,49 @@
+.work-editor-container {
+  padding-top: 20px;
+  position: relative;
+  height: 100%;
+  overflow: auto;
+  scrollbar-color: #f8f9fa #e4e4e4;
+  transition: scrollbar-color 0.3s ease-out;
+  background-color: #f5f5f5;
+
+  .work-editor {
+    cursor: auto;
+    display: flex;
+    justify-content: space-between;
+
+    &-content {
+      width: 641px;
+      min-height: 907px;
+
+      &-textarea {
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        resize: none;
+        border: none;
+        outline: none;
+        overflow: hidden;
+      }
+    }
+  }
+}
+
+.work-editor-container::-webkit-scrollbar {
+  overflow: visible;
+  width: 16px;
+}
+
+.work-editor-container::-webkit-scrollbar-thumb {
+  background-color: rgba(218, 220, 224);
+  border-radius: 100px;
+  background-color: #dadce0;
+  box-shadow: none;
+  border: 4px solid #f5f5f5;
+}
+
+.work-editor-container::-webkit-scrollbar-track {
+  background-color: #f5f5f5;
+  margin: 0 4px;
+  box-shadow: none;
+}

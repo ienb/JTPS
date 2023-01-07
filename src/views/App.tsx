@@ -1,11 +1,12 @@
-import React from "react";
+import React from 'react';
+import { useRoutes } from 'react-router-dom';
+import routers from '../router';
 
-function App() {
-    return (
-      <div className="App">
-        <h1>This is React App.</h1>
-      </div>
-    )
-  }
-  
-export default App
+const App = () => {
+  // @ts-ignore
+  const element = useRoutes(routers);
+
+  console.log(element);
+  return <div>{element}</div>;
+};
+export default App;
