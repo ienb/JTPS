@@ -4,10 +4,10 @@ module.exports = {
       '@babel/env',
       {
         useBuiltIns: 'usage',
-        corejs: 3
-      }
+        corejs: 3,
+      },
     ],
-    "@babel/preset-react",
-    "@babel/preset-typescript"
-  ]
-}
+    '@babel/preset-react',
+    '@babel/preset-typescript',
+  ],
+};

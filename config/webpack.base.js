@@ -65,7 +65,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: path.resolve(__dirname, '../public/index.html'),
-      hash: true
+      hash: true,
+      title: `JPTS`
     }),
     new CleanWebpackPlugin(),
     new CopyWebpackPlugin({
