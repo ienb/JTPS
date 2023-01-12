@@ -7,6 +7,7 @@ import IttsPic from '@/assets/svg/itts.svg';
 import Logo from '@/assets/svg/logo.svg';
 import Vector from '@/assets/svg/vector.svg';
 import ButtonHover from '@/assets/svg/button-hover.svg';
+import NavBackgroundTop from '@/assets/svg/nav-back-top.svg';
 
 interface Props {
   title: string;
@@ -19,6 +20,13 @@ function header(props: Props) {
     backgroundRepeat: 'no-repeat',
     padding: '0 5px',
   };
+  const TopNavBackground = {
+    backgroundImage: `url(${NavBackgroundTop})`,
+    backgroundRepeat: 'no-repeat',
+    width: '100%',
+    backgroundSize: '1540px',
+    backgroundPosition: '0px 46px',
+  }
 
   const handleMouseEnter = () => {
     setIsHover(true);
@@ -29,7 +37,7 @@ function header(props: Props) {
   };
 
   return (
-    <div className="header">
+    <div className="header" style={TopNavBackground}>
       <div className="top">
         <div className="title">{props.title}</div>
         <div className="tools">
