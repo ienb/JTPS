@@ -1,11 +1,7 @@
-export enum ModeType {
-  NORMAL = 'normal', // 正常模式
-  PREVIEW = 'preview', // 预览模式
-}
+export type ModeType = 'normal' | 'preview'
 
 export interface PropType {
   value?: string; // 文本内容
-  setValue: Function,
   mode?: ModeType; // 编辑器模式
   showTOC?: boolean; // 是否显示目录
   style?: object; // 编辑器样式

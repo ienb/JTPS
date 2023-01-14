@@ -1,0 +1,31 @@
+.work-editor {
+  cursor: auto;
+  display: flex;
+  justify-content: space-between;
+
+  &-content {
+    width: 641px;
+    min-height: 907px;
+
+    &-textarea {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 40px;
+      box-sizing: border-box;
+      resize: none;
+      border: none;
+      outline: none;
+      //overflow: hidden;
+    }
+  }
+
+  #write {
+    height: 100%;
+    flex: 1;
+    padding: 20px 20px 40px 20px;
+    overflow: auto;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  }
+}

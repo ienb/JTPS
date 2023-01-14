@@ -4,6 +4,7 @@ import hljs from 'highlight.js';
 const markdown: MarkdownIt = new MarkdownIt({
   html: false,
   breaks: true,
+  linkify: true,
   highlight: function (code, language) {
     if (language && hljs.getLanguage(language)) {
       try {
@@ -54,3 +55,5 @@ const markdown: MarkdownIt = new MarkdownIt({
     liClass: 'task-list-item',
   })
   .use(require('markdown-it-emoji'));
+
+export default markdown;
